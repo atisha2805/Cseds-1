@@ -1,78 +1,70 @@
-body { 
-      font-family:"Times New Roman"; 
-      margin: 0; 
-      background: #111010; 
-      color: aliceblue;
-      padding: 20px; 
-    } 
-    h1 {
-        background: #fff;
-        color: chocolate;
-        text-align: center;
-    }
+body {
+  font-family:"Times New Roman"; 
+  margin: 0; 
+  background: #111010; 
+  color: aliceblue;
+  padding: 20px; 
+} 
+h1 {
+  background: #fff;
+  color: chocolate;
+  text-align: center;
+}
+h2 {
+  text-align: center; 
+  margin-bottom: 20px; 
+} 
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+} 
+.card { 
+  background: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  padding: 16px; 
+  text-align: center; 
+} 
+.card img { 
+  width: 100%; 
+  height: 150px; 
+  border-radius: 6px; 
+  margin-bottom: 10px; 
+} 
+.card h3 { 
+  font-size: 18px; 
+  margin: 8px 0; 
+  color: white;
+} 
+.card p { 
+  font-size: 14px; 
+  color:rgb(209, 27, 27); 
+  margin: 4px 0; 
+} 
+.price { 
+  font-weight: bold; 
+  color: #3dca1a; 
+} 
+strike{
+  color: grey;
+}
+.buy-now{
+  background-color: darkgoldenrod;
+  color: aliceblue;
+}
+.add-to-cart{
+  background-color: cadetblue;
+  color: #fff;
+}
  
-    h2 { 
-      text-align: center; 
-      margin-bottom: 20px; 
-    } 
-    .grid { 
-      display: grid; 
-      grid-template-columns: repeat(4, 1fr); 
-      gap: 20px; 
-    } 
- 
-    
-    .card { 
-      background: #fff; 
-      border-radius: 8px; 
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-      padding: 16px; 
-      text-align: center; 
-    } 
- 
-    .card img { 
-      width: 100%; 
-      height: 150px; 
-      border-radius: 6px; 
-      margin-bottom: 10px; 
-    } 
- 
-    .card h3 { 
-      font-size: 18px; 
-      margin: 8px 0; 
-      color: white;
-    } 
- 
-    .card p { 
-      font-size: 14px; 
-      color:rgb(209, 27, 27); 
-      margin: 4px 0; 
-    } 
- 
-    .price { 
-      font-weight: bold; 
-      color: #3dca1a; 
-    } 
-    strike{
-        color: grey;
-    }
-    .buy-now{
-        background-color: darkgoldenrod;
-        color: aliceblue;
-    }
-    .add-to-cart{
-        background-color: cadetblue;
-        color: #fff;
-    }
- 
-    @media (max-width: 1024px) { 
-      .grid { 
-        grid-template-columns:1fr,1fr;
-      } 
-    } 
- 
-    @media (max-width: 600px) { 
-      .grid { 
-        grid-template-columns: 1fr; 
-      } 
-    } 
+@media (max-width: 1024px) { 
+  .grid { 
+    grid-template-columns:repeat(2,1fr);
+  } 
+} 
+@media (max-width: 600px) { 
+  .grid { 
+    grid-template-columns: 1fr; 
+  } 
+} 
