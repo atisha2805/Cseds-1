@@ -1,0 +1,100 @@
+<html>
+<head>
+   <title>Responsive Product Grid</title>
+   <style>
+body{
+background-color:black;
+color:white;
+}
+h2{
+text-align:center;
+background-color:white;
+color:black;
+}
+h3{
+text-align:center;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+.card{
+background-color:white;
+border:1px solid grey;
+width:250px;
+height:300px;
+border-radius:10%;
+text-align:center;
+}
+.card img{
+color:black;
+height:100px;
+width:80%;
+border-radius:6px;
+}
+.card h3{
+text-align:center;
+color:black;
+}
+p{
+color:red;
+}
+.price{
+color:green;
+}
+strike{
+color:red;
+}
+button{
+background-color:purple;
+color:white;
+font-size:16px;
+}
+@media(max-width:1024px) {
+   .grid{
+      grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:600px){
+    .grid{
+        grid-template-columns: 1fr;
+     }
+}
+   
+
+   </style>
+</head>
+<body>
+  <header>
+    <h2>E-commerce Webpage</h2>
+  </header>
+    <h3 id="heading">Responsive Product Grid</h3>
+  <div class="grid">
+     <div class="card">
+         <img src=" " alt="Refrigerator image">
+         <h3>Product 1</h3>
+         <p>Star smart inverter frost free refrigerator</p>
+         <p class="price">&#8377;3699<strike>&#8377;5988</strike></p>
+         <button>Add-To-Cart</button>
+         <button>Buy-Now</button>
+     </div>
+     <div class="card">
+         <img src=" " alt="Washing Machine image">
+         <h3>Product 1</h3>
+         <p>Star smart inverter automatic machine</p>
+         <p class="price">&#8377;3699<strike>&#8377;5988</strike></p>
+         <button>Add-To-Cart</button>
+         <button>Buy-Now</button>
+     </div>
+     <div class="card">
+         <img src=" " alt="Microwave image">
+         <h3>Product 1</h3>
+         <p>Star smart inverter Hot fast Oven</p>
+         <p class="price">&#8377;3699<strike>&#8377;5988</strike></p>
+         <button>Add-To-Cart</button>
+         <button>Buy-Now</button>
+     </div>
+   </div>
+</body>
+</html>
